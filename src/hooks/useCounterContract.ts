@@ -24,7 +24,7 @@ export function useCounterContract(){
       if(!counterContract) return
         setVal(null)
       // await sleep(5000); // sleep 5 seconds and poll value again
-      // const val = await counterContract.getCounter()
+      const val = await counterContract.getCounter()
       setVal(Number(val))
     }
     getValue()
